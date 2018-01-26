@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Code for CFT</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <button id="btn" class="button" type="button" data-hover="К началу страницы"><span>&uarr;</span></button>
+
+<h1>HTML + CSS</h1>
+
+<!-- GRID TABLE -->
+<div class="container-fluid">
+	<div class="table">
+		<div class="grid">
+			<div class="cell cell--header">Company Name</div>
+			<div class="cell cell--header">Open</div>
+			<div class="cell cell--header">Market Price</div>
+			<div class="cell cell--header">Profit</div>
+		</div>
+		<div class="grid grid--body grid--body-first">
+			<div class="cell cell--body"><div class="cell--body__inner">Apple/AAPL</div></div>
+			<div class="cell cell--body"><div class="cell--body__inner">177,30</div></div>
+			<div class="cell cell--body"><div class="cell--body__inner">900.6bn</div></div>
+			<div class="cell cell--body"><div class="cell--body__inner">1.41%</div></div>
+		</div>
+		<div class="grid grid--body">
+			<div class="cell cell--body"><div class="cell--body__inner">Google/GOOG</div></div>
+			<div class="cell cell--body"><div class="cell--body__inner">1169,97</div></div>
+			<div class="cell cell--body"><div class="cell--body__inner">814,7bn</div></div>
+			<div class="cell cell--body"><div class="cell--body__inner">39,10</div></div>
+		</div>
+		<div class="grid grid--body grid--body-last">
+			<div class="cell cell--body"><div class="cell--body__inner">Starbucks/SBUX</div></div>
+			<div class="cell cell--body"><div class="cell--body__inner">61,32</div></div>
+			<div class="cell cell--body"><div class="cell--body__inner">87,77bn</div></div>
+			<div class="cell cell--body"><div class="cell--body__inner">1,96%</div></div>
+		</div>
+	</div>
+</div>
+<!-- END GRID TABLE -->
+
+<!-- FLEX BOX TABLE -->
+<div class="container-fluid">
+  <div class="table-flex">
+
+			<div>
+				<div class="rows header">
+					<div class="cell">Web Development</div>
+					<div class="cell">FrameWorks</div>
+					<div class="cell">Programming</div>
+					<div class="cell">Task Runners</div>
+				</div>
+			</div>
+
+			<div>
+				<div class="rows">
+					<div class="cell">HTML</div>
+					<div class="cell">ReatcJS</div>
+					<div class="cell">Python</div>
+					<div class="cell">Gulp</div>
+				</div>
+			</div>
+
+			<div>
+				<div class="rows">
+					<div class="cell">CSS</div>
+					<div class="cell">VueJS</div>
+					<div class="cell">PHP</div>
+					<div class="cell">Grunt</div>
+				</div>
+			</div>
+
+			<div>
+				<div class="rows">
+					<div class="cell">JavaScript</div>
+					<div class="cell">AngularJS</div>
+					<div class="cell">Ruby</div>
+					<div class="cell">Browserify</div>
+				</div>
+			</div>
+
+		</div>
+
+  </div>
+<!-- END FLEX BOX TABLE -->
+
+
+<!-- BLOCK -->
+<div class="block">
+ Hide Me
+</div>
+<!-- END BLOCK -->
+
+<hr>
+
+<h1>JavaScript</h1>
+
+<div class="container">
+	<div class="table">
+		<div class="grid">
+			<div class="cell cell--header">Company Name</div>
+			<div class="cell cell--header">Open</div>
+			<div class="cell cell--header">Market Price</div>
+			<div class="cell cell--header">Profit</div>
+		</div>
+		<div class="grid grid--body grid--body-first">
+			<div class="cell cell--body"><div class="cell--body__inner">Apple/AAPL</div></div>
+			<div class="cell cell--body"><div class="cell--body__inner">177,30</div></div>
+			<div class="cell cell--body"><div class="cell--body__inner">900.6bn</div></div>
+			<div class="cell cell--body"><div class="cell--body__inner">1.41%</div></div>
+		</div>
+		<div class="grid grid--body">
+			<div class="cell cell--body"><div class="cell--body__inner">Google/GOOG</div></div>
+			<div class="cell cell--body"><div class="cell--body__inner">1169,97</div></div>
+			<div class="cell cell--body"><div class="cell--body__inner">814,7bn</div></div>
+			<div class="cell cell--body"><div class="cell--body__inner">39,10</div></div>
+		</div>
+		<div class="grid grid--body grid--body-last">
+			<div class="cell cell--body"><div class="cell--body__inner">Starbucks/SBUX</div></div>
+			<div class="cell cell--body"><div class="cell--body__inner">61,32</div></div>
+			<div class="cell cell--body"><div class="cell--body__inner">87,77bn</div></div>
+			<div class="cell cell--body"><div class="cell--body__inner">1,96%</div></div>
+		</div>
+	</div>
+</div>
+<h2 id="result"></h2>
+<hr>
+
+<h3>OOP in JavaScript</h3>
+
+<div class="container">
+	<p>Using Object Literal Notation:</p>
+	<code>
+		let obj = { <br>
+          prop1: 1,<br>
+          prop2: "String",<br>
+          prop3: function(){}, //Or ES6 methods prop3()<br>
+          prop4: {}<br>
+	    }<br>
+	</code>
+<hr>
+	<p>Using new Object() syntax:</p>
+	<code>
+		let obj = new Object(); <br>
+		obj.prop1 = 1; <br>
+		obj.prop2 = "string"; <br>
+		obj.prop3 = function(){}; <br>
+		obj.prop4 = {}; <br>
+	</code>
+<hr>
+	<p>Using Object Constructor</p>
+	<code>
+		function Obj(firstName, lastName){ <br>
+             this.firstName = firstName;<br>
+             this.lastName = lastName;<br>
+             this.getAllName = function(){<br>
+               return `${this.firstName} ${this.lastName};<br>
+           }<br>
+	    }<br>
+
+	    let person1 = new Obj('Matthew', 'Fox'); <br>
+	    let person2 = new Obj('Daniel', 'Craig');<br>
+	</code>
+<hr>
+	<p>Using Object.create()</p>
+	<code>
+		let Human = {<br>
+           power: 10,<br>
+           intelligence: "different for all",<br>
+           type: "man or woman",<br>
+           displayType: function(){<br>
+               console.log(this.type);<br>
+           }<br>
+	    }<br>
+
+	    let human1 = Object.create(Human);<br>
+	    human1.displayType();<br>
+	</code>
+	<hr>
+
+
+	<h3>Inheritance in JavaScript</h3>
+	<p>In JavaScript, inheritance is implemented with prototyping.</p>
+	<code>
+		function Person(){}<br>
+		Person.prototype.run = function(){};<br>
+        <hr>
+		function Animal(){}<br>
+		Animal.prototype = new Person(); // Or Person.prototype<br> 
+        <hr>
+        let example = new Animal();<br>
+        <hr>
+		Check:<br>
+		console.log(example instanceof Animal);<br>
+		console.log(example instanceof Person);<br>
+		console.log(example instanceof Object);<br>
+	</code>
+</div>
+
+
+<h3>Inputs Function</h3>
+<div class="container">
+<input type="text">
+<input type="text"><br>
+<code>
+	'use strict';<br>
+     const f = (i1, i2) => {<br>
+
+        const synchronize = (event) => {<br>
+           i2.value = event.target.value;<br>
+        }<br>
+
+       i1.addEventListener('input', synchronize);<br>
+     }<br>
+
+f(document.getElementsByTagName('input')[0], document.getElementsByTagName('input')[1]);<br>
+</code>
+</div>
+<hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="main.js"></script>
+</body>
+</html>
